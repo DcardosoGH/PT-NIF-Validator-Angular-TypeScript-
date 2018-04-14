@@ -19,6 +19,8 @@ Simply place the file ```nif.validator.ts ``` inside of your project folder.
 Below is a basic example on how to use the NIF Validator on the TypeScript File and on the HTML template.
 #### Component ``app.component.ts``
 
+- Import ``nifValidator`` and refer to it as a Validador when creating your FormGroup.
+
 ```sh  
 import { nifValidator } from './validators/nif.validator';
 import { FormBuilder } from '@angular/forms';
@@ -45,6 +47,9 @@ createForm() {
 ```
 
 ### Template ``app.component.html``
+
+To make use of the validation on the template, refer to the Form errors as illustrated below.
+
 ``` sh
 <div class="form-group">
         <label for="nif">Qual o seu número de contribuinte (NIF)?</label>
